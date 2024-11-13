@@ -18,6 +18,7 @@ app.use((req, res, next) => {
 app.use('/api/courses', courseRoutes)
 app.use('/api/user', userRoutes)
 
+
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
     app.listen(port, () => {
